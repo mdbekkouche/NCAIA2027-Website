@@ -1,0 +1,251 @@
+/******************************************************************************
+*
+* NCAIAC 2027
+* colors.css
+*
+******************************************************************************/
+
+/*==========================================================
+  Primary Color Palette
+==========================================================*/
+
+:root{
+
+    /* Primary Brand Colors */
+
+    --primary:           #0D6EFD;
+    --primary-dark:      #084298;
+    --primary-light:     #6EA8FE;
+
+    /* Secondary Colors */
+
+    --secondary:         #003366;
+    --secondary-dark:    #002147;
+    --secondary-light:   #336699;
+
+    /* Accent Colors */
+
+    --accent:            #17A2B8;
+    --accent-light:      #5BC0DE;
+
+    /* Neutral Colors */
+
+    --white:             #FFFFFF;
+    --light:             #F8F9FA;
+    --gray-100:          #F1F3F5;
+    --gray-200:          #E9ECEF;
+    --gray-300:          #DEE2E6;
+    --gray-400:          #CED4DA;
+    --gray-500:          #ADB5BD;
+    --gray-600:          #6C757D;
+    --gray-700:          #495057;
+    --gray-800:          #343A40;
+    --gray-900:          #212529;
+    --black:             #000000;
+
+    /* Status Colors */
+
+    --success:           #198754;
+    --success-light:     #D1E7DD;
+
+    --warning:           #FFC107;
+    --warning-light:     #FFF3CD;
+
+    --danger:            #DC3545;
+    --danger-light:      #F8D7DA;
+
+    --info:              #0DCAF0;
+    --info-light:        #CFF4FC;
+
+    /* Borders */
+
+    --border:            #DEE2E6;
+
+    /* Shadows */
+
+    --shadow-light:      rgba(0,0,0,0.08);
+    --shadow-medium:     rgba(0,0,0,0.15);
+    --shadow-dark:       rgba(0,0,0,0.25);
+
+}
+
+/*==========================================================
+  Background Classes
+==========================================================*/
+
+.bg-primary{
+    background:var(--primary);
+}
+
+.bg-secondary{
+    background:var(--secondary);
+}
+
+.bg-light{
+    background:var(--light);
+}
+
+.bg-white{
+    background:var(--white);
+}
+
+.bg-success{
+    background:var(--success);
+}
+
+.bg-warning{
+    background:var(--warning);
+}
+
+.bg-danger{
+    background:var(--danger);
+}
+
+.bg-info{
+    background:var(--info);
+}
+
+/*==========================================================
+  Text Colors
+==========================================================*/
+
+.text-primary{
+    color:var(--primary);
+}
+
+.text-secondary{
+    color:var(--secondary);
+}
+
+.text-light{
+    color:var(--light);
+}
+
+.text-dark{
+    color:var(--gray-900);
+}
+
+.text-white{
+    color:var(--white);
+}
+
+.text-success{
+    color:var(--success);
+}
+
+.text-warning{
+    color:#B8860B;
+}
+
+.text-danger{
+    color:var(--danger);
+}
+
+.text-info{
+    color:var(--info);
+}
+
+.text-muted{
+    color:var(--gray-600);
+}
+
+/*==========================================================
+  Borders
+==========================================================*/
+
+.border-primary{
+    border:1px solid var(--primary);
+}
+
+.border-secondary{
+    border:1px solid var(--secondary);
+}
+
+.border-light{
+    border:1px solid var(--gray-300);
+}
+
+.border-dark{
+    border:1px solid var(--gray-900);
+}
+
+/*==========================================================
+  Buttons
+==========================================================*/
+
+.btn-primary{
+
+    background:var(--primary);
+    color:var(--white);
+    border-color:var(--primary);
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.btn-secondary{
+
+    background:var(--secondary);
+    color:var(--white);
+    border-color:var(--secondary);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--secondary-dark);
+
+}
+
+/*==========================================================
+  Alerts
+==========================================================*/
+
+.alert-success{
+
+    background:var(--success-light);
+    color:var(--success);
+
+}
+
+.alert-warning{
+
+    background:var(--warning-light);
+
+}
+
+.alert-danger{
+
+    background:var(--danger-light);
+
+}
+
+.alert-info{
+
+    background:var(--info-light);
+
+}
+
+/*==========================================================
+  Links
+==========================================================*/
+
+a{
+
+    color:var(--primary);
+
+}
+
+a:hover{
+
+    color:var(--primary-dark);
+
+}
+
+/******************************************************************************
+ End of File
+******************************************************************************/

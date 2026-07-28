@@ -1,0 +1,532 @@
+/******************************************************************************
+*
+* NCAIAC 2027
+* animations.css
+*
+******************************************************************************/
+
+/******************************************************************************
+* Page Fade
+******************************************************************************/
+
+body{
+    animation: fadeInPage 0.8s ease-in-out;
+}
+
+@keyframes fadeInPage{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+/******************************************************************************
+* Fade Up
+******************************************************************************/
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:fadeUp 0.8s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/******************************************************************************
+* Fade Down
+******************************************************************************/
+
+.fade-down{
+
+    opacity:0;
+
+    transform:translateY(-40px);
+
+    animation:fadeDown .8s ease forwards;
+
+}
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/******************************************************************************
+* Fade Left
+******************************************************************************/
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-50px);
+
+    animation:fadeLeft .8s ease forwards;
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/******************************************************************************
+* Fade Right
+******************************************************************************/
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(50px);
+
+    animation:fadeRight .8s ease forwards;
+
+}
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/******************************************************************************
+* Zoom
+******************************************************************************/
+
+.zoom-in{
+
+    animation:zoomIn .7s ease;
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.90);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/******************************************************************************
+* Hero Image Floating
+******************************************************************************/
+
+.hero img{
+
+    animation:floatImage 6s ease-in-out infinite;
+
+}
+
+@keyframes floatImage{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/******************************************************************************
+* Card Hover
+******************************************************************************/
+
+.card{
+
+    transition:
+
+        transform .35s ease,
+
+        box-shadow .35s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/******************************************************************************
+* Button Hover
+******************************************************************************/
+
+.btn{
+
+    transition:
+
+    all .30s ease;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/******************************************************************************
+* Image Hover
+******************************************************************************/
+
+img{
+
+    transition:
+
+    transform .4s ease,
+
+    box-shadow .4s ease;
+
+}
+
+img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/******************************************************************************
+* Navigation Hover
+******************************************************************************/
+
+.nav-link{
+
+    position:relative;
+
+    transition:color .3s ease;
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-4px;
+
+    width:0;
+
+    height:2px;
+
+    background:#ffffff;
+
+    transition:width .3s;
+
+}
+
+.nav-link:hover::after{
+
+    width:100%;
+
+}
+
+/******************************************************************************
+* Table Animation
+******************************************************************************/
+
+.table{
+
+    animation:fadeInTable .9s ease;
+
+}
+
+@keyframes fadeInTable{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/******************************************************************************
+* Section Appearance
+******************************************************************************/
+
+section{
+
+    animation:sectionFade .9s ease;
+
+}
+
+@keyframes sectionFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/******************************************************************************
+* Countdown
+******************************************************************************/
+
+#countdown{
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/******************************************************************************
+* Logo
+******************************************************************************/
+
+.navbar-brand img{
+
+    transition:transform .35s ease;
+
+}
+
+.navbar-brand:hover img{
+
+    transform:rotate(-5deg) scale(1.08);
+
+}
+
+/******************************************************************************
+* Footer Icons
+******************************************************************************/
+
+.social-icon{
+
+    transition:
+
+    transform .3s ease,
+
+    color .3s ease;
+
+}
+
+.social-icon:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/******************************************************************************
+* Smooth Scroll
+******************************************************************************/
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/******************************************************************************
+* Loading Spinner
+******************************************************************************/
+
+.spinner{
+
+    width:50px;
+
+    height:50px;
+
+    border:5px solid #e5e5e5;
+
+    border-top:5px solid #0d6efd;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/******************************************************************************
+* Delay Classes
+******************************************************************************/
+
+.delay-1{
+
+    animation-delay:.2s;
+
+}
+
+.delay-2{
+
+    animation-delay:.4s;
+
+}
+
+.delay-3{
+
+    animation-delay:.6s;
+
+}
+
+.delay-4{
+
+    animation-delay:.8s;
+
+}
+
+.delay-5{
+
+    animation-delay:1s;
+
+}
+
+/******************************************************************************
+* End
+******************************************************************************/

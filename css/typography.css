@@ -1,0 +1,494 @@
+/******************************************************************************
+*
+* NCAIAC 2027
+* typography.css
+*
+******************************************************************************/
+
+/*==========================================================
+  Google Font
+==========================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/*==========================================================
+  Base Typography
+==========================================================*/
+
+body{
+
+    font-family:'Inter', Arial, Helvetica, sans-serif;
+
+    font-size:16px;
+
+    font-weight:400;
+
+    line-height:1.8;
+
+    color:#212529;
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+/*==========================================================
+  Headings
+==========================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-weight:700;
+
+    color:#003366;
+
+    line-height:1.3;
+
+    margin-top:0;
+
+    margin-bottom:1rem;
+
+}
+
+h1{
+
+    font-size:3rem;
+
+}
+
+h2{
+
+    font-size:2.25rem;
+
+}
+
+h3{
+
+    font-size:1.75rem;
+
+}
+
+h4{
+
+    font-size:1.40rem;
+
+}
+
+h5{
+
+    font-size:1.15rem;
+
+}
+
+h6{
+
+    font-size:1rem;
+
+}
+
+/*==========================================================
+  Paragraphs
+==========================================================*/
+
+p{
+
+    margin-bottom:1.2rem;
+
+    color:#495057;
+
+}
+
+/*==========================================================
+  Links
+==========================================================*/
+
+a{
+
+    color:#0D6EFD;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    color:#084298;
+
+    text-decoration:underline;
+
+}
+
+/*==========================================================
+  Lists
+==========================================================*/
+
+ul,
+ol{
+
+    margin-bottom:1.5rem;
+
+    padding-left:1.5rem;
+
+}
+
+li{
+
+    margin-bottom:.6rem;
+
+}
+
+/*==========================================================
+  Strong & Emphasis
+==========================================================*/
+
+strong{
+
+    font-weight:700;
+
+}
+
+em{
+
+    font-style:italic;
+
+}
+
+/*==========================================================
+  Blockquotes
+==========================================================*/
+
+blockquote{
+
+    border-left:5px solid #0D6EFD;
+
+    background:#F8F9FA;
+
+    padding:20px;
+
+    margin:30px 0;
+
+    font-style:italic;
+
+    color:#495057;
+
+}
+
+/*==========================================================
+  Code
+==========================================================*/
+
+code{
+
+    font-family:Consolas, monospace;
+
+    background:#F1F3F5;
+
+    padding:2px 6px;
+
+    border-radius:4px;
+
+    color:#C7254E;
+
+}
+
+pre{
+
+    background:#212529;
+
+    color:white;
+
+    padding:20px;
+
+    border-radius:8px;
+
+    overflow-x:auto;
+
+}
+
+/*==========================================================
+  Tables
+==========================================================*/
+
+table{
+
+    font-size:0.95rem;
+
+}
+
+th{
+
+    font-weight:600;
+
+}
+
+/*==========================================================
+  Forms
+==========================================================*/
+
+label{
+
+    font-weight:600;
+
+    margin-bottom:.5rem;
+
+}
+
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+    font-size:1rem;
+
+}
+
+/*==========================================================
+  Buttons
+==========================================================*/
+
+.btn{
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    letter-spacing:.3px;
+
+}
+
+/*==========================================================
+  Navigation
+==========================================================*/
+
+.navbar-brand{
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+}
+
+.nav-link{
+
+    font-size:1rem;
+
+    font-weight:500;
+
+}
+
+/*==========================================================
+  Hero Section
+==========================================================*/
+
+.hero-title{
+
+    font-size:3.5rem;
+
+    font-weight:700;
+
+}
+
+.hero-subtitle{
+
+    font-size:1.25rem;
+
+    font-weight:400;
+
+    color:#6C757D;
+
+}
+
+/*==========================================================
+  Section Titles
+==========================================================*/
+
+.section-title{
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+    font-size:1.1rem;
+
+    color:#6C757D;
+
+    margin-bottom:40px;
+
+}
+
+/*==========================================================
+  Footer
+==========================================================*/
+
+.footer{
+
+    font-size:.95rem;
+
+}
+
+.footer h4{
+
+    color:white;
+
+}
+
+/*==========================================================
+  Utilities
+==========================================================*/
+
+.text-small{
+
+    font-size:.875rem;
+
+}
+
+.text-large{
+
+    font-size:1.2rem;
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-justify{
+
+    text-align:justify;
+
+}
+
+.uppercase{
+
+    text-transform:uppercase;
+
+}
+
+.capitalize{
+
+    text-transform:capitalize;
+
+}
+
+/*==========================================================
+  Responsive Typography
+==========================================================*/
+
+@media(max-width:992px){
+
+h1{
+
+    font-size:2.5rem;
+
+}
+
+h2{
+
+    font-size:2rem;
+
+}
+
+.hero-title{
+
+    font-size:3rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+body{
+
+    font-size:15px;
+
+}
+
+h1{
+
+    font-size:2rem;
+
+}
+
+h2{
+
+    font-size:1.75rem;
+
+}
+
+h3{
+
+    font-size:1.5rem;
+
+}
+
+.hero-title{
+
+    font-size:2.4rem;
+
+}
+
+.hero-subtitle{
+
+    font-size:1.1rem;
+
+}
+
+}
+
+@media(max-width:576px){
+
+body{
+
+    font-size:14px;
+
+}
+
+h1{
+
+    font-size:1.8rem;
+
+}
+
+h2{
+
+    font-size:1.5rem;
+
+}
+
+h3{
+
+    font-size:1.3rem;
+
+}
+
+.hero-title{
+
+    font-size:2rem;
+
+}
+
+.section-title{
+
+    font-size:1.6rem;
+
+}
+
+}

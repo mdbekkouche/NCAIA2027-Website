@@ -1,0 +1,490 @@
+/******************************************************************************
+*
+* NCAIAC 2027
+* responsive.css
+*
+******************************************************************************/
+
+/*==========================================================
+  Large Screens (≤ 1200px)
+==========================================================*/
+
+@media (max-width: 1200px){
+
+.container{
+
+    width:95%;
+
+}
+
+.hero h1{
+
+    font-size:2.7rem;
+
+}
+
+}
+
+/*==========================================================
+  Laptops & Tablets (≤ 992px)
+==========================================================*/
+
+@media (max-width: 992px){
+
+.page-header{
+
+    padding:70px 20px;
+
+}
+
+.page-header h1{
+
+    font-size:2.3rem;
+
+}
+
+.hero{
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:2.4rem;
+
+}
+
+.hero img{
+
+    margin-top:30px;
+
+}
+
+.card{
+
+    margin-bottom:25px;
+
+}
+
+.navbar-nav{
+
+    text-align:center;
+
+}
+
+.table{
+
+    font-size:0.95rem;
+
+}
+
+.member-card{
+
+    margin-bottom:25px;
+
+}
+
+.speaker{
+
+    margin-bottom:30px;
+
+}
+
+}
+
+/*==========================================================
+  Tablets (≤ 768px)
+==========================================================*/
+
+@media (max-width: 768px){
+
+body{
+
+    font-size:15px;
+
+}
+
+section{
+
+    padding:50px 0;
+
+}
+
+.page-header{
+
+    padding:60px 20px;
+
+}
+
+.page-header h1{
+
+    font-size:2rem;
+
+}
+
+.page-header p{
+
+    font-size:1rem;
+
+}
+
+.hero{
+
+    padding:60px 0;
+
+}
+
+.hero h1{
+
+    font-size:2rem;
+
+}
+
+.hero p{
+
+    font-size:1rem;
+
+}
+
+.container{
+
+    width:95%;
+
+}
+
+h2{
+
+    font-size:1.7rem;
+
+}
+
+h3{
+
+    font-size:1.4rem;
+
+}
+
+.card{
+
+    margin-bottom:20px;
+
+}
+
+.card-body{
+
+    padding:20px;
+
+}
+
+.btn{
+
+    margin-top:8px;
+
+}
+
+.table{
+
+    display:block;
+
+    overflow-x:auto;
+
+    white-space:nowrap;
+
+}
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+.footer{
+
+    text-align:center;
+
+}
+
+}
+
+/*==========================================================
+  Smartphones (≤ 576px)
+==========================================================*/
+
+@media (max-width:576px){
+
+.page-header{
+
+    padding:45px 15px;
+
+}
+
+.page-header h1{
+
+    font-size:1.7rem;
+
+}
+
+.hero h1{
+
+    font-size:1.8rem;
+
+}
+
+.hero p{
+
+    font-size:0.95rem;
+
+}
+
+h2{
+
+    font-size:1.5rem;
+
+}
+
+.btn{
+
+    width:100%;
+
+    margin-bottom:12px;
+
+}
+
+.navbar-brand{
+
+    font-size:1rem;
+
+}
+
+.member-card{
+
+    padding:20px;
+
+}
+
+.member-card img{
+
+    width:100px;
+
+}
+
+.speaker img{
+
+    width:140px;
+
+}
+
+.form-control{
+
+    font-size:0.95rem;
+
+}
+
+.table{
+
+    font-size:0.85rem;
+
+}
+
+.footer{
+
+    padding:35px 15px;
+
+}
+
+}
+
+/*==========================================================
+  Small Phones (≤ 400px)
+==========================================================*/
+
+@media (max-width:400px){
+
+.page-header h1{
+
+    font-size:1.5rem;
+
+}
+
+.hero h1{
+
+    font-size:1.5rem;
+
+}
+
+h2{
+
+    font-size:1.3rem;
+
+}
+
+.container{
+
+    width:98%;
+
+}
+
+.btn{
+
+    font-size:0.9rem;
+
+}
+
+.table{
+
+    font-size:0.8rem;
+
+}
+
+}
+
+/*==========================================================
+  Images
+==========================================================*/
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/*==========================================================
+  Embedded Maps
+==========================================================*/
+
+iframe{
+
+    width:100%;
+
+    border:0;
+
+}
+
+/*==========================================================
+  Responsive Videos
+==========================================================*/
+
+.video-container{
+
+    position:relative;
+
+    padding-bottom:56.25%;
+
+    height:0;
+
+    overflow:hidden;
+
+}
+
+.video-container iframe{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+/*==========================================================
+  Utilities
+==========================================================*/
+
+.hide-mobile{
+
+    display:block;
+
+}
+
+.show-mobile{
+
+    display:none;
+
+}
+
+@media (max-width:768px){
+
+.hide-mobile{
+
+    display:none;
+
+}
+
+.show-mobile{
+
+    display:block;
+
+}
+
+}
+
+/* Navbar Logo */
+.navbar-logo{
+    height:55px;
+    width:auto;
+    max-width:100%;
+    transition:all .3s ease;
+}
+
+/* Tablet */
+@media (max-width:992px){
+    .navbar-logo{
+        height:48px;
+    }
+}
+
+/* Mobile */
+@media (max-width:768px){
+    .navbar-logo{
+        height:42px;
+    }
+}
+
+/* Small phones */
+@media (max-width:576px){
+    .navbar-logo{
+        height:36px;
+    }
+}
+
+/* Partner Logos */
+.partner-logo{
+    height:110px;
+    width:auto;
+    max-width:100%;
+    object-fit:contain;
+}
+
+/* Large tablets */
+@media (max-width:992px){
+    .partner-logo{
+        height:90px;
+    }
+}
+
+/* Tablets */
+@media (max-width:768px){
+    .partner-logo{
+        height:75px;
+    }
+}
+
+/* Mobile */
+@media (max-width:576px){
+    .partner-logo{
+        height:60px;
+    }
+}
+
+/******************************************************************************
+* End of File
+******************************************************************************/

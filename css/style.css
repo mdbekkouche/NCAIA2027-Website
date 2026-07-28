@@ -1,0 +1,677 @@
+/******************************************************************************
+*
+* NCAIAC 2027
+* Main Stylesheet
+*
+******************************************************************************/
+
+/*==========================================================
+  Root Variables
+==========================================================*/
+
+:root{
+
+    --primary:#0d6efd;
+    --secondary:#003366;
+    --light:#f8f9fa;
+    --dark:#212529;
+    --gray:#6c757d;
+    --white:#ffffff;
+    --border:#dee2e6;
+
+}
+
+/*==========================================================
+  Global
+==========================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--dark);
+    background:var(--light);
+    line-height:1.7;
+
+}
+
+a{
+
+    color:var(--primary);
+    text-decoration:none;
+
+}
+
+a:hover{
+
+    color:#084298;
+
+}
+
+img{
+
+    max-width:100%;
+    height:auto;
+
+}
+
+section{
+
+    padding:70px 0;
+
+}
+
+.container{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+}
+
+/*==========================================================
+  Header
+==========================================================*/
+
+.page-header{
+
+    background: linear-gradient(135deg, #006633, #28a745);
+
+    color:white;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+.page-header h1{
+
+    font-size:2.6rem;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+
+}
+
+.page-header p{
+
+    font-size:1.2rem;
+
+}
+
+/*==========================================================
+  Navbar
+==========================================================*/
+
+.navbar{
+
+    background:white;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+
+}
+
+.navbar-brand{
+
+    font-weight:bold;
+
+    color:var(--secondary);
+
+}
+
+.nav-link{
+
+    font-weight:500;
+
+}
+
+.nav-link:hover{
+
+    color:var(--primary);
+
+}
+
+.navbar{
+
+    background: linear-gradient(135deg, #007A3D, #34C759);
+
+    transition: all .35s ease;
+
+    padding: 12px 0;
+
+}
+
+.navbar-scrolled{
+
+    background: #006633;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+
+}
+
+/*==========================================================
+  Hero
+==========================================================*/
+
+.hero{
+
+    background:white;
+
+    padding:90px 0;
+
+}
+
+.hero h1{
+
+    font-size:3rem;
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:1.2rem;
+
+    color:var(--black);
+
+}
+
+/*==========================================================
+  Buttons
+==========================================================*/
+
+.btn{
+
+    border-radius:5px;
+
+    padding:10px 24px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#084298;
+
+}
+
+.btn-outline-primary{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    background:white;
+
+}
+
+.btn-outline-primary:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/*==========================================================
+  Cards
+==========================================================*/
+
+.card{
+
+    border:none;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    margin-bottom:30px;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card-header{
+
+    background:var(--primary);
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+/*==========================================================
+  Titles
+==========================================================*/
+
+h2{
+
+    color:var(--secondary);
+
+    margin-bottom:25px;
+
+    font-weight:bold;
+
+}
+
+h3{
+
+    color:var(--secondary);
+
+    margin-bottom:15px;
+
+}
+
+h4{
+
+    margin-bottom:15px;
+
+}
+
+/*==========================================================
+  Lists
+==========================================================*/
+
+ul{
+
+    padding-left:20px;
+
+}
+
+li{
+
+    margin-bottom:8px;
+
+}
+
+/*==========================================================
+  Tables
+==========================================================*/
+
+.table{
+
+    background:white;
+
+}
+
+.table thead{
+
+    background:var(--secondary);
+
+    color:white;
+
+}
+
+.table td,
+
+.table th{
+
+    vertical-align:middle;
+
+}
+
+/*==========================================================
+  Forms
+==========================================================*/
+
+.form-control{
+
+    border-radius:6px;
+
+    border:1px solid var(--border);
+
+    padding:10px;
+
+}
+
+.form-control:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 5px rgba(13,110,253,.25);
+
+}
+
+/*==========================================================
+  Alerts
+==========================================================*/
+
+.alert{
+
+    border-radius:8px;
+
+}
+
+/*==========================================================
+  Committee Members
+==========================================================*/
+
+.member-card{
+
+    text-align:center;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+}
+
+.member-card img{
+
+    width:120px;
+
+    border-radius:50%;
+
+    margin-bottom:15px;
+
+}
+
+/*==========================================================
+  Speaker Cards
+==========================================================*/
+
+.speaker{
+
+    text-align:center;
+
+}
+
+.speaker img{
+
+    width:180px;
+
+    border-radius:50%;
+
+    margin-bottom:15px;
+
+}
+
+/*==========================================================
+  Program
+==========================================================*/
+
+.program-time{
+
+    font-weight:bold;
+
+    color:var(--primary);
+
+}
+
+/*==========================================================
+  Footer
+==========================================================*/
+
+.footer{
+
+    background:#003366;
+
+    color:white;
+
+    padding:50px 0;
+
+    text-align:center;
+
+}
+
+.footer a{
+
+    color:#ffffff;
+
+}
+
+.footer a:hover{
+
+    color:#dddddd;
+
+}
+
+/*==========================================================
+  Utilities
+==========================================================*/
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-primary{
+
+    color:var(--primary);
+
+}
+
+.mt-5{
+
+    margin-top:3rem;
+
+}
+
+.mb-5{
+
+    margin-bottom:3rem;
+
+}
+
+.py-5{
+
+    padding-top:3rem;
+
+    padding-bottom:3rem;
+
+}
+
+.shadow{
+
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+
+}
+
+.rounded{
+
+    border-radius:10px;
+
+}
+
+/*==========================================================
+  Responsive
+==========================================================*/
+
+@media(max-width:992px){
+
+.hero h1{
+
+font-size:2.4rem;
+
+}
+
+.page-header h1{
+
+font-size:2.2rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.page-header{
+
+padding:60px 20px;
+
+}
+
+.page-header h1{
+
+font-size:1.8rem;
+
+}
+
+.hero h1{
+
+font-size:2rem;
+
+}
+
+section{
+
+padding:50px 0;
+
+}
+
+.table{
+
+font-size:.9rem;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.container{
+
+width:95%;
+
+}
+
+.btn{
+
+width:100%;
+
+margin-bottom:10px;
+
+}
+
+}
+
+/*==========================================================
+Countdown
+==========================================================*/
+
+.countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-top:30px;
+
+}
+
+.countdown-box{
+
+    width:120px;
+
+    padding:20px;
+
+    background:#ffffff;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.10);
+
+    text-align:center;
+
+}
+
+.countdown-box span{
+
+    display:block;
+
+    font-size:2.8rem;
+
+    font-weight:700;
+
+    color:#198754;  
+
+}
+
+.countdown-box small{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:1rem;
+
+    color:#6c757d;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+@media (max-width:768px){
+
+    .countdown{
+
+        gap:15px;
+
+    }
+
+    .countdown-box{
+
+        width:90px;
+
+        padding:15px;
+
+    }
+
+    .countdown-box span{
+
+        font-size:2rem;
+
+    }
+
+}
