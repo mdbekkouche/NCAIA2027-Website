@@ -1,2 +1,1 @@
-Professional NCAIAC 2027 website skeleton.
-Fill pages incrementally.
+NCAIAC 2027 website.
